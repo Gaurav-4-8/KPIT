@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context
+		http://www.springframework.org/schema/context/spring-context.xsd"
+       xmlns:context="http://www.springframework.org/schema/context">   
+  
+    <!-- <context:component-scan base-package="com.students"/> -->
+
+    <bean id = "profile" class = "com.students.Profile"></bean>
+
+   <!-- Definition for student1 bean -->
+   <bean id = "student1" class = "com.students.Student">
+      <property name = "name" value = "Zara" />
+      <property name = "age" value = "11"/>
+   </bean>
+
+   <!-- Definition for student2 bean -->
+   <bean id = "student2" class = "com.students.Student">
+      <property name = "name" value = "Nuha" />
+      <property name = "age" value = "2"/>
+   </bean>
+
+
+</beans>
